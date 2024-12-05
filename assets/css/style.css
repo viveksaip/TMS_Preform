@@ -544,7 +544,9 @@ body.nav-active { overflow: hidden; }
   gap: 20px;
 }
 
+
 .about .section-text { margin-block: 20px 35px; }
+
 
 .tab-list {
   display: flex;
@@ -909,10 +911,15 @@ body.nav-active { overflow: hidden; }
 
   /**
    * SERVICE
-   */
+  
 
   .service-list { grid-template-columns: 1fr 1fr; }
-
+  
+  */
+  
+  .service-list { 
+    grid-template-columns: 30% 60% 10%;
+  }
 
 
   /**
@@ -1003,11 +1010,11 @@ body.nav-active { overflow: hidden; }
 
   /**
    * SERVICE
-   */
+   
 
   .service-list { grid-template-columns: repeat(4, 1fr); }
 
-
+  */
 
   /**
    * ABOUT
