@@ -3,7 +3,7 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 codewithsadee
+ * copyright 2022 Vivek Sani
  */
 
 
@@ -163,6 +163,7 @@ body.nav-active { overflow: hidden; }
 
 /*-----------------------------------*\
   #REUSED STYLE
+  font-weight: var(--fw-500);
 \*-----------------------------------*/
 
 .container { padding-inline: 16px; }
@@ -889,9 +890,10 @@ body.nav-active { overflow: hidden; }
 
   /**
    * HERO
-   */
+  */ 
 
   .hero-title { line-height: 1.125; }
+ 
 
   .hero .wrapper {
     display: flex;
