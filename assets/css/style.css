@@ -1055,15 +1055,26 @@ body.nav-active { overflow: hidden; }
 
   .about-content { padding-block-end: var(--section-padding); }
 
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .about-banner { margin-inline-end: -80px; }
 
-  /* Mobile fix */
   @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;    /* Optional: center them horizontally */
+    }
+
     .about-banner {
-      margin-inline-end: 0; /* Removes the negative margin on smaller screens */
-      margin-top: 2rem; /* Adds space between text and image */
-      }
+      margin-inline-end: 0; /* Reset negative margin */
+      margin-top: 2rem;     /* Add space between text and image */
+    }
   }
+
 
   /**
    * BLOG
