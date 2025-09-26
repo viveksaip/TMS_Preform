@@ -1055,23 +1055,32 @@ body.nav-active { overflow: hidden; }
 
   .about-content { padding-block-end: var(--section-padding); }
 
+  .about-banner { margin-inline-end: -80px; }
+
+
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 
-  .about-banner { margin-inline-end: -80px; }
+  .about-banner {
+    max-width: max-content;
+    margin-inline-start: auto; /* Right-align on desktop */
+  }
 
+  /* Mobile layout */
   @media (max-width: 768px) {
     .container {
-      flex-direction: column; /* Stack items vertically */
-      align-items: center;    /* Optional: center them horizontally */
+      flex-direction: column;
+      align-items: center;
     }
 
     .about-banner {
-      margin-inline-end: 0; /* Reset negative margin */
-      margin-top: 2rem;     /* Add space between text and image */
+      margin-inline-start: auto;
+      margin-inline-end: auto; /* Center on mobile */
+      margin-top: 2rem;
     }
   }
 
