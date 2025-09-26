@@ -1055,7 +1055,7 @@ body.nav-active { overflow: hidden; }
 
   .about-content { padding-block-end: var(--section-padding); }
 
-  .about-banner { margin-inline-end: -80px; }
+  /** .about-banner { margin-inline-end: -80px; } */
 
 
 
