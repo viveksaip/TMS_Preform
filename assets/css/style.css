@@ -546,7 +546,12 @@ body.nav-active { overflow: hidden; }
 }
 
 
-.about .section-text { margin-block: 20px 35px; }
+.about .section-text {   
+  margin-block: 20px 35px;
+  text-align: justify;
+  hyphens: auto;
+  margin-inline: auto; 
+}
 
 
 .tab-list {
@@ -571,6 +576,12 @@ body.nav-active { overflow: hidden; }
 .tab-text {
   color: var(--midnight-green);
   margin-block: 35px;
+}
+
+.tabvs-text {
+  color: var(--midnight-green);
+  margin-block: 35px;
+  font-weight: bold;
 }
 
 .about-item {
@@ -995,11 +1006,26 @@ body.nav-active { overflow: hidden; }
 
   /**
    * HERO
-   */
+  
 
   .hero-banner {
     display: block;
     max-width: max-content;
+  }
+ 
+  */
+
+  .hero-banner {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .hero-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
   .hero .container {
