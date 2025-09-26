@@ -1057,7 +1057,6 @@ body.nav-active { overflow: hidden; }
 
   .about-banner { margin-inline-end: -80px; }
 
-
   .container {
     display: flex;
     justify-content: space-between;
@@ -1067,10 +1066,10 @@ body.nav-active { overflow: hidden; }
 
   .about-banner {
     max-width: max-content;
-    margin-inline-start: auto; /* Right-align on desktop */
+    margin-inline-start: auto; 
   }
 
-  /* Mobile layout */
+  
   @media (max-width: 768px) {
     .container {
       flex-direction: column;
@@ -1079,10 +1078,11 @@ body.nav-active { overflow: hidden; }
 
     .about-banner {
       margin-inline-start: auto;
-      margin-inline-end: auto; /* Center on mobile */
+      margin-inline-end: auto; 
       margin-top: 2rem;
     }
   }
+
 
 
   /**
