@@ -1055,9 +1055,15 @@ body.nav-active { overflow: hidden; }
 
   .about-content { padding-block-end: var(--section-padding); }
 
-  /** .about-banner { margin-inline-end: -80px; } */
+  .about-banner { margin-inline-end: -80px; }
 
-
+  /* Mobile fix */
+  @media (max-width: 768px) {
+    .about-banner {
+      margin-inline-end: 0; /* Removes the negative margin on smaller screens */
+      margin-top: 2rem; /* Adds space between text and image */
+      }
+  }
 
   /**
    * BLOG
