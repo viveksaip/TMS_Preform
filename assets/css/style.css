@@ -448,6 +448,11 @@ body.nav-active { overflow: hidden; }
   background-color: var(--white);
 }
 
+.tagline {
+  color: var(--white);
+  font-weight: var(--fw-1000);
+}
+
 .hero-title { margin-block: 20px 30px; }
 
 .hero-card {
@@ -1055,7 +1060,7 @@ body.nav-active { overflow: hidden; }
 
   .about-content { padding-block-end: var(--section-padding); }
 
-  .about-banner { margin-inline-end: -80px; }
+  /** .about-banner { margin-inline-end: -40px; } */
 
 
   /**
